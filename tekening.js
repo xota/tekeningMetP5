@@ -1,16 +1,18 @@
 var achtergrond = 220;
 
 function setup() {
-        createCanvas(400, 400);
-        background(achtergrond);
+	createCanvas(400, 400);
+	background(achtergrond);
 }
     	
 function draw() {
-          noFill();
-          rect(50, 50, 200, 200);
-          fill(255, 0,0); //rood
-          rect(60, 60, 180, 180);
-          fill(0,0,255); //blauw
-          ellipse(200,200,100,50);
+	noFill();
+	rect(50, 50, 200, 200);
+	fill(255, 0,0); //rood
+	rect(60, 60, 180, 180);
+	fill(0,0,255); //blauwellipse(200,200,100,50);
+        
+	achtergrond += 1;
+	achtergrond %= 255; //rest modulo 255 om waarde tussen 0 en 255 te krijgen
 }
     
