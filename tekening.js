@@ -1,6 +1,8 @@
+var achtergrond = 220;
+
 function setup() {
         createCanvas(400, 400);
-        background(220);
+        background(achtergrond);
 }
     	
 function draw() {
